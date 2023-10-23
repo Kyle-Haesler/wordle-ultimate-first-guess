@@ -7,14 +7,14 @@ const cors = require("cors");
 
 const errorHandler = require("./errors/errorHandler");
 const notFound = require("./errors/notFound");
-const reservationsRouter = require("./reservations/reservations.router");
+const wordleWordsRouter = require("./wordleWords/wordleWords.router");
 
 const app = express();
 
 app.use(cors());
 app.use(express.json());
 
-app.use("/reservations", reservationsRouter);
+app.use(wordleWordsRouter);
 
 app.use(notFound);
 app.use(errorHandler);

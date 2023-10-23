@@ -1,5 +1,3 @@
-const allWordsList = require("../data/allWordsList")
-
 
 function UltimateFirstGuess(validWords){
     // go through each word, make a count of each letter by way of a map
@@ -28,8 +26,8 @@ function UltimateFirstGuess(validWords){
     const wordScoreArray = Array.from(wordScore, ([word, score]) => ({word, score}))
     wordScoreArray.sort((a, b) => b.score - a.score)
     const highestScoreWord = wordScoreArray[0].word
-
+    console.log(wordScoreArray.splice(0,5))
     return highestScoreWord
 }
 
-console.log(UltimateFirstGuess(allWordsList))
+module.exports = UltimateFirstGuess
