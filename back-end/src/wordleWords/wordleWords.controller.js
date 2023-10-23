@@ -21,7 +21,6 @@ try {
       validWords.push(allWordsList[i])
     }
   }
-  console.log(validWords.length)
     const finalWord = UltimateFirstGuess(validWords);
     res.json({ data: finalWord });
 } catch(error){

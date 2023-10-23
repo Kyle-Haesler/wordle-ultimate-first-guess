@@ -19,13 +19,11 @@ function HomePage() {
   }
 
   return (
-    <main>
-      <h1>{firstGuess}</h1>
-      <div className="d-md-flex mb-3">
-        <h4 className="mb-0">Reservations for date</h4>
-      </div>
+        <div>
+            <h1 className="display-4 bg-success text-white p-3">Wordle's Ultimate First Guess</h1>
+      <h2>{firstGuess}</h2>
       <ErrorAlert error={firstGuessError} />
-    </main>
+      </div>
   );
 }
 

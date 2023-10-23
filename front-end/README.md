@@ -1,5 +1,4 @@
-# Capstone: Restaurant Reservation System Frontend
+# Wordle Ultimate First Guess
+Basic application that shows the user the best word to start with when playing Wordle
+ 
 
-This starter code for the backend of the capstone project in the Thinkful curriculum.
-
-See [../README.md](../README.md) for detailed instructions.
