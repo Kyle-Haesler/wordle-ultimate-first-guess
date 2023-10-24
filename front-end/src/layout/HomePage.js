@@ -40,7 +40,7 @@ function HomePage() {
       <hr />
       <footer className="display-5 bg-success text-white p-3">
         <h6>Copyright: Kyle Haesler</h6>
-        <p>In honor of the Worlding Turtles</p>
+        <p>In honor of the Wordling Turtles</p>
       </footer>
       </div>
   );
