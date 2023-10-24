@@ -1,4 +1,4 @@
-
+// objective - create a function that calculates the best start word based off of letter frequency
 function UltimateFirstGuess(validWords){
     // go through each word, make a count of each letter by way of a map
     const letterCount = new Map()

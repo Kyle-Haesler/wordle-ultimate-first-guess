@@ -1,16 +1,9 @@
 import React from "react";
 import HomePage from "./HomePage";
-import { Redirect, Route, Switch } from "react-router-dom";
+import { Route, Switch } from "react-router-dom";
 import NotFound from "./NotFound";
 
-
-/**
- * Defines all the routes for the application.
- *
- * You will need to make changes to this file.
- *
- * @returns {JSX.Element}
- */
+// Defines routes for the application, in this case, we are only looking at the homepage as it is a simple application
 function Routes() {
   return (
     <Switch>

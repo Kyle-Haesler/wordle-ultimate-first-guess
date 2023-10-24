@@ -1,8 +1,4 @@
-/**
- * Defines the router for reservation resources.
- *
- * @type {Router}
- */
+// Simple router with one objective - get the best wordle word
 
 const router = require("express").Router();
 const controller = require("./wordleWords.controller");
