@@ -26,9 +26,8 @@ function HomePage() {
             <br />
             <main className="bg-light">
       <h3 className="text-decoration-underline">Today's Start Word:</h3>
-      <h4 className="text-success font-italic">{!firstGuess.length ? "...Have you ever fried cheese in a pan?" : firstGuess}</h4> 
+      <h4 className="text-success font-italic">{!firstGuess.length ? "...Working very hard, please be patient (allow roughly 10 seconds to load)" : firstGuess}</h4> 
       <ErrorAlert error={firstGuessError} />
-      </main>
       <hr />
       <article>
         <h5>How Does This Work?</h5>
@@ -38,6 +37,15 @@ function HomePage() {
         <p>This will automatically calculate everytime you come to this site so be sure to give it a look before you play!</p>
       </article>
       <hr />
+      <article>
+        <h5>Simulation Results: 1.78 greens or yellows per guess</h5>
+        <p>It is possible to simulate an entire round of wordle words (A) by selecting a solution word at random, producing our guess word, counting the letters (green or yellow) that we guess correctly and removing the solution word from (A).</p>
+        <p>We repeat this process until there are no more words left (~2,300 words so that many guesses as well). This is one round.</p>
+        <p>After running this simulation 10 times (over 20,000 guesses), we come to the conclusion that on average, our first guess will get 1.78 letters correctly, green or yellow.</p>
+        <p>However, as time goes on and more words are used, our average will improve! After the first guess, the rest is up to you!</p>
+      </article>
+      <hr />
+      </main>
       <footer className="display-5 bg-success text-white p-3">
         <h6>Copyright: Kyle Haesler</h6>
         <p>In honor of the Wordling Turtles</p>

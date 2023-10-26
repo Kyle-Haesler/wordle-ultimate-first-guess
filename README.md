@@ -17,6 +17,15 @@ This will automatically calculate everytime you come to this site so be sure to 
 
 Used words list is acquired from: https://www.rockpapershotgun.com/wordle-past-answers
 
+## Simulation
+It is possible to simulate an entire round of wordle words (A) by selecting a solution word at random, producing our guess word, counting the letters (green or yellow) that we guess correctly and removing the solution word from (A).
+
+We repeat this process until there are no more words left (~2,300 words so that many guesses as well). This is one round.
+
+After running this simulation 10 times (over 20,000 guesses), we come to the conclusion that on average, our first guess will get 1.78 letters correctly, green or yellow.
+
+However, as time goes on and more words are used, our average will improve! After the first guess, the rest is up to you!
+
 ## API
 ### GET https://wordle-ultimate-first-guess-backend.onrender.com
 - returns top scoring word 
